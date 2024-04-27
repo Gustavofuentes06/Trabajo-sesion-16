@@ -5,13 +5,13 @@ public class App {
         public static int num1;
     public static int num2;
     public static int num3;
-    // suma de numeros pequeños 
+    // suma de los numeros pequeños 
     public static int sumarpequeños (int num1,int num2, int num3){
         int menor= Math.min(num1, num2) ;
         int menor2= Math.min(Math.max(num1, num2), num3) ;
         return menor2+menor; 
     }
-    //Resta de numeros grandes 
+    //Resta de los numeros grandes 
     public static int restagrandes (int num1, int num2, int num3){
         int mayor= Math.max(num1, num2);
         int mayor2= Math.max(Math.min(num1, num2), num3); 
@@ -43,8 +43,7 @@ public class App {
 
     } while (num1 == num2 || num1 == num3 || num2 == num3);
 
-    // Se muestran las operaciones ya efectuadas 
-    
+    // Se muestra el resultado de las operaciones  
     System.out.println("La suma de los números más pequeños es "+sumarpequeños(num1, num2, num3));
     System.out.println("La resta de los números más grandes es  "+restagrandes(num1, num2, num3));
     System.out.println("El número mayor es "+numeromayor(num1, num2, num3)); 
